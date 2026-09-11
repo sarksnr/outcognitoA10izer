@@ -1,0 +1,13 @@
+{
+	"manifest_version": 3,
+	"name": "A10izer",
+	"version": "1.0",
+	"description": "You need A10 everywhere dont you..?",
+	"permissions": ["activeTab"],
+	"content_scripts": [
+	{
+		"matches": ["<all_urls>"],
+		"js":["content.js"]
+		}
+		]
+}
