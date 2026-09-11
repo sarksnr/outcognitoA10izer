@@ -1,25 +1,23 @@
-// Function to rotate all divs on the page
-function rotateAllDivs(degrees = 15) {
-  const divs = document.querySelectorAll('div');
+function applyTilt() {
+  const styleId = 'div-rotator-style';
 
-  divs.forEach((div) => {
-    // Add smooth animation
-    div.style.transition = 'transform 0.5s ease-in-out';
-    
-    // Check for existing transform or apply new rotation
-    const currentRotation = div.dataset.currentRotation 
-      ? parseInt(div.dataset.currentRotation, 10) 
-      : 0;
-    
-    const newRotation = currentRotation + degrees;
-    div.style.transform = `rotate(${newRotation}deg)`;
-    div.dataset.currentRotation = newRotation;
-  });
+  // Prevent duplicate style tags if the script runs more than once
+  if (!document.getElementById(styleId)) {
+    const style = document.createElement('style');
+    style.id = styleId;
+    style.textContent = `
+      div {
+        transform: rotate(-30deg) !important;
+        transition: transform 0.4s ease-out !important;
+      }
+    `;
+    (document.head || document.documentElement).appendChild(style);
+  }
 }
 
-// Run rotation when the DOM is fully loaded
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', () => rotateAllDivs(180));
+// Inject immediately or as soon as the DOM starts loading
+if (document.head || document.documentElement) {
+  applyTilt();
 } else {
-  rotateAllDivs(180);
+  document.addEventListener('DOMContentLoaded', applyTilt);
 }
