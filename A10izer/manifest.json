@@ -3,7 +3,7 @@
 	"name": "A10izer",
 	"version": "1.0",
 	"description": "You need A10 everywhere dont you..?",
-	"permissions": ["activeTab", "Storage"],
+	"permissions": ["activeTab", "storage"],
 	"action": {
     "default_popup": "popup.html"
 	},
