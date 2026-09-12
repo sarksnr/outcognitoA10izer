@@ -51,8 +51,8 @@ For Software:
 ![After using A10izer](s2.png)
 *A10izing the page*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot3](s3.jpg)
+*Popup of extension*
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
@@ -62,13 +62,13 @@ For Software:
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+[a10.mp4]
+*Working of A10izer*
 
 
 
 ## Team Contributions
-- Sreekumar Sajith: Made this alone
+- Sreekumar Sajith: Made this
 
 
 ---
