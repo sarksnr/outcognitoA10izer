@@ -71,7 +71,8 @@ For Software:
 
 
 ## Team Contributions
-- Sreekumar Sajith: Made this
+- Sreekumar Sajith: Made this A10izer
+- Aditya Uday: Made Outcognito search engine
 
 
 ---
