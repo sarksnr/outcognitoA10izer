@@ -46,10 +46,10 @@ For Software:
 
 # Screenshots 
 ![Drishti instagram handle](s1.png)
-*Normal Page
+*Normal Page*
 
 ![After using A10izer](s2.png)
-*A10izing the page
+*A10izing the page*
 
 ![Screenshot3](Add screenshot 3 here with proper name)
 *Add caption explaining what this shows*
@@ -58,7 +58,6 @@ For Software:
 ![Workflow](Add your workflow/architecture diagram here)
 *Add caption explaining your workflow*
 
-For Hardware:
 
 
 ### Project Demo
@@ -66,8 +65,7 @@ For Hardware:
 [Add your demo video link here]
 *Explain what the video demonstrates*
 
-# Additional Demos
-[Add any extra demo materials/links]
+
 
 ## Team Contributions
 - Sreekumar Sajith: Made this alone
