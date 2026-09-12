@@ -15,6 +15,7 @@ actionButton.addEventListener('change', () => {
 
   if (actionButton.checked) {
     myAudio.play();
+      
   } else {
     myAudio2.play();
   }
@@ -33,3 +34,4 @@ actionButton.addEventListener('change', () => {
 chrome.storage.local.get({ rotationEnabled: false }, ({ rotationEnabled }) => {
   actionButton.checked = rotationEnabled;
 });
+
