@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OUTCOGNITO </title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👁</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── Header ─────────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="logo-wrap">
+      <h1 class="logo"> <img src="https://i.pinimg.com/736x/ca/12/6c/ca126c42b026e5f7f5a53f57cc591001.jpg" alt="Lol" height="200" width="150" style="position: relative; left: -70px;">OUTCOGNITO</h1>
+    </div>
+    <p class="tagline">Search the internet. Everyone is watching.</p>
+    
+    <p class="subtext">Everything you search here is public. Forever-ish.</p>
+  </header>
+
+  <!-- ── Demo mode banner ───────────────────────────────────── -->
+  <div id="demo-banner" class="demo-banner hidden">
+    <span>🔧</span>
+    Google Search API isn't configured — demo mode activated. Results below are placeholders.
+  </div>
+
+  <!-- ── Main layout ───────────────────────────────────────── -->
+  <main class="layout">
+
+    <!-- Left: search + results -->
+    <section class="search-section">
+
+      <!-- Search bar -->
+      <form class="search-form" id="searchForm">
+        <div class="search-bar-wrap">
+          <span class="search-icon">🔍</span>
+          <input
+            type="text"
+            id="searchInput"
+            class="search-input"
+            placeholder="What are you secretly searching for?"
+            autocomplete="off"
+            spellcheck="false"
+            maxlength="200"
+          />
+          <button type="submit" class="search-btn" id="searchBtn">
+            <span class="btn-text">SEARCH</span>
+            <span class="btn-spinner hidden" id="btnSpinner">⏳</span>
+          </button>
+        </div>
+        <p class="search-disclaimer">
+          By pressing SEARCH you agree that your query is exposed to the entire internet. No, you cannot opt out.
+        </p>
+      </form>
+
+      <!-- Outcognito says -->
+      <div class="outcognito-says hidden" id="outcognitoSays">
+        <span class="says-label">OUTCOGNITO SAYS</span>
+        <span class="says-quote" id="saysQuote"></span>
+      </div>
+
+      <!-- Results -->
+      <div class="results-section" id="resultsSection">
+        <div class="results-placeholder" id="resultsPlaceholder">
+          <div class="placeholder-eye">👁</div>
+          <p>Your searches will appear here.</p>
+          <p class="placeholder-sub">And everyone else's will appear on the right.</p>
+        </div>
+        <div id="resultsList" class="results-list hidden"></div>
+      </div>
+
+    </section>
+
+    <!-- Right: live feed -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <span class="live-label">LIVE SEARCHES</span>
+        <span class="live-count" id="liveCount">0</span>
+      </div>
+
+      <div class="sidebar-no-supabase hidden" id="sidebarNoSupabase">
+        <p>⚠ Supabase isn't configured.</p>
+        <p>Configure it to see live searches from other users.</p>
+        <p class="demo-feed-note">Showing a local demo feed below.</p>
+      </div>
+
+      <div class="feed" id="feed">
+        <!-- populated by JS -->
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <p>OUTCOGNITO &copy; 2026 — Privacy was never an option.</p>
+    <p class="footer-sub">Your username: <strong id="footerUsername"></strong></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
