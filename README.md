@@ -14,32 +14,35 @@
 - Member 2: Adithya Uday - CET, TVM
 
 ### Project Description
+Outcognito Search Engine where all your data is public! 
 Gives a classic Lalettan Signature move to every website you are visiting
 
 ### The Problem (that doesn't exist)
+Too much Privacy in search engines.
 Lalettans legacy is slowly fading in the internet.
 
 ### The Solution (that nobody asked for)
+We give you a search engine where all youre data is public.
 With A10izer, we remind our users A10 and his classic signature move how a left shoulder slant carried the whole malayalam film industries.
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
 - Javascript, HTML, CSS
-- Manifest V3
-- None
-- VS Code, Firefox
+- Manifest V3, SupaBase 
+- Node JS
+- VS Code, Firefox, Antigravity
 
 
 ### Implementation
 For Software:
 # Installation
-git clone https://github.com/sarksnr/useless_project_temp/tree/main/A10izer
+git clone https://github.com/sarksnr/outcognitoA10izer
 go to about:debugging in firefox and load temporary addon, then select manifest.json
 
 
 # Run
-no particular commands
+node server.js
 
 ### Project Documentation
 For Software:
